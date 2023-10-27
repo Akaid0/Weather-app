@@ -17,6 +17,9 @@ body{
 .container{
     padding: 20px 70px;
     color:#fff;
+    margin: 0 auto;
+    max-width: 1500px;
+    height: 50vh;
 }
 
 .current-info{
@@ -30,6 +33,8 @@ body{
 .date-container .time{
     font-size: 70px;
     text-shadow: 1.5px 1.5px 3px black;
+    line-height: 50px;
+    height: 50px !important;
 }
 
 .date-container #am-pm{
@@ -155,6 +160,10 @@ body{
     .container{
         padding: 20px;
     }
+
+    .container .place-container{
+        opacity: 0;
+    }
     
     .future-forecast{
         justify-content: start;
@@ -162,8 +171,16 @@ body{
         overflow-y: scroll;
     }
 
+    .future-forecast .today{
+        flex-direction: column-reverse;
+        margin: 0;
+        padding: 15px;
+    }
+
     .future-forecast .today .temp{
-        font-size: 16px;
+        font-size: 12px;
+        font-weight: 300;
+        padding: 0;
     }
 
     .date-container .time{
